@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eBook Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>eBook Library</h1>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search for eBooks...">
+            <button id="searchButton">🔍</button>
+        </div>
+    </header>
+
+    <!-- Loading Screen -->
+    <div id="loader" class="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <main>
+        <h2 id="searchResultsTitle" style="display: none;">Search Results</h2> <!-- Initially hidden -->
+        <div id="bookList" class="book-list"></div>
+    </main>
+
+    <!-- Section for random book previews -->
+    <section id="randomBooksSection">
+        <h2>Discover Books</h2>
+        <div id="randomBookList" class="book-list"></div>
+    </section>
+    <footer id="footer">
+        <p>pikxul@2024-<span id="year"></span></p>
+    </footer>
+        
+    <script src="index.js"></script>
+</body>
+</html>
